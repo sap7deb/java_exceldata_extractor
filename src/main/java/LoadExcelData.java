@@ -29,7 +29,7 @@ public class LoadExcelData {
     }
 
     public static Object[] getEnabledExcelTests(String excelFileName, String sheetName, String executionFlagName) {
-        String file = excelFileName;
+        String file = System.getProperty("user.dir") + excelFileName;
         XSSFSheet sheet = readExcel(file, sheetName);
         List<Map<String, Object>> dataList = getDataAsList(sheet);
         System.out.println(dataList);
