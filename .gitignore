@@ -1,0 +1,5 @@
+# Maven
+target
+target/
+node_modules/
+.idea
